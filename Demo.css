@@ -1,0 +1,11 @@
+.picture {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.picture-demo img {
+  width: 300px;
+}

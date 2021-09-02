@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Navbar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Phần Navbar -->
+    <div class="navbar">
+        <div class="menu-container ">
+            <a href="./Menu.html"  class="logo"><h1>HTT</h1></a>
+            <div class="menu-search">
+                <input type="search" class="search">
+                <i class="fas fa-search"></i>
+            </div>
+            <ul id="menu" class="menu-items">
+                <li><a href="./Menu.html">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#image">Image</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Contact</a></li>
+                    <div class="dropdown-child">
+                        <section> 0948162500</section>
+                        <section>hathienty2000@gmail.com</section>
+                    </div>
+                </div>
+                </ul>
+            <div class="menu-logo">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phần Section -->
+    <div class="section">
+        <div class="section-container">
+            <div class="section-banner">
+                <div class="banner-items">
+                    <h1>Xuất bản đam mê của bạn theo cách của bạn</h1>
+                    <p>Tạo Blog mới dễ dàng và miễn phí</p>
+                    <input type="file" id="input-blog" hidden="hidden">
+                    <button type="button" id="btb-add-blog">Tạo Blog mới</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="section"  id="books">
+        <div class="section-container">
+
+            <div class="section-items">
+                <h1><span>B</span>ooks</h1>
+                <ul class="items">
+                    <li>
+                        <img src="./Image/ngọc-trai-nhiều-màu.jpg" alt=""/>
+                        <div class="item">
+                        <a href="#">Review: Người đua diều</a>
+                        <p>Mỗi lần nhắc đến tác phẩm Người đua diều của nhà văn Khaled Housseini, trong lòng tôi lại dâng lên nỗi ân hận, và cả sự hổ thẹn nữa.  Chả là, cách đây độ gần 15 năm, một cô sinh viên yêu quý của tôi đã dúi vào tay tôi cuốn sách The kite runner … More</p>
+                        <i class="fas fa-comments"></i>
+                    </div>
+                </li>
+                <li>
+                    <img src="./Image//noibanden-nhatuphuquoc9-1.jpg" alt=""/>
+                    <div class="item">
+                        
+                        <a href="#">BẠN BỎ LỠ ĐIỀU GÌ NẾU KHÔNG ĐỌC SÁCH TRONG NHỮNG NGÀY PHONG TOẢ?</a>
+                        <p>Ngày còn bé, khi mới bắt đầu làm quen với con chữ, chúng ta tò mò, khao khát được đọc mỗi ngày và thích thú mỗi khi đọc một câu chuyện hay. Thế nhưng khi lớn lên, bị cuốn theo những hình thức giải trí nhanh, tiện lợi khác như mạng xã hội, những cuốn … More</p>
+                        <i class="fas fa-comments"></i>
+                    </div>
+                </li>
+                <li>
+                    <img src="./Image/nui-cam-ha-giang-2.jpg" alt=""/>
+                    <div class="item">
+                        <a href="#">Để mỗi ngày đến trường là một ngày vui</a>
+                        <p>Con tôi đang học lớp 8 ở một trường cấp 2 tại Pháp. Một buổi chiều, sau khi đi học về, con kể với tôi rằng hôm nay vào giờ học Văn, con có bài trình bày trước cả lớp về bài thơ yêu thích nhất. Nhưng mà con run quá nên không làm được. … More</p>
+                        <i class="fas fa-comments" ></i>
+                    </div>
+                </li>
+                <li>
+                    <img src="./Image/maxresdefault.jpg" alt=""/>
+                    <div class="item">
+                        <a href="#">Protected: Dạy con về giới tính</a>
+                        <p>Mình đọc cuốn sách này trong kỳ nghỉ hè. Đọc xong thì sốc mất mấy ngày chả làm được việc gì nên hồn. Đây chính là hậu quả của việc mình không bao giờ đọc review được khi đọc sách. Nếu biết buồn đã chả đọc. Nhưng có cái tính lạ là đọc xong lại … More</p>
+                        <i class="fas fa-comments" ></i>
+                    </div>
+                </li>
+                <button class="item-button">Đọc thêm</button>
+            </ul>
+        </div>
+        </div>
+    </div>
+    
+    <section class="about" id="about">
+        <div class="about-me">
+            <h1><span>A</span>bout me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ut nesciunt a impedit illum neque consequuntur quo in tenetur dolore dolor optio incidunt dolorem perspiciatis nulla ipsam reiciendis nisi odio!</p>
+            <a href="#"><i class="fas fa-donate"></i> Donate</a>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook của Hà Thiện Tỷ</a>
+        </div>
+    </section>
+
+    <!-- Phần Footer -->
+
+    <div class="footer">
+        <div class="footer-container">
+            <form class="footer-form">
+                <p>Follow Blog with Email</p>
+                <p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+                <p>Join 1,000 other followers</p>
+                <input class="footer-input" type="email" placeholder="Enter your Email address..." >
+                <button type="submit" class="button" >Follow</button>
+            </form>
+            
+        </div>
+    </div>
+
+</body>
+<script src="./Index.js"></script>
+</html>
