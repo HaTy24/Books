@@ -10,7 +10,6 @@
 .about {
   margin: 0;
   padding: 0;
-  height: 100vh;
   display: block;
   margin: 50px;
   border-top: solid 1px #666;
@@ -23,19 +22,21 @@
   padding-top: 50px;
 }
 
-.about-me h1 {
-  letter-spacing: 5px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
 .about-me p {
   line-height: 2rem;
 }
 
-.about-me span {
-  font-size: 40px;
-  color: #ff2222;
+.about-me a {
+  display: grid;
+  grid-column: span;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 30px 0;
+  transition: all 0.3s ease;
+}
+
+.about-me a:hover {
+  color: #910000;
 }
 
 .section {
@@ -75,21 +76,8 @@
   color: var(--color-white);
 }
 
-.section-banner button {
+.button-banner {
   margin-top: 100px;
-  background-color: var(--color-red-dark);
-  padding: 20px 40px;
-  border: none;
-  border-radius: 5px;
-  color: var(--color-white);
-  font-size: 18px;
-  font-weight: 600;
-  transition: all 0.5s ease;
-}
-
-.section-banner button:hover {
-  background-color: var(--color-background);
-  color: #000000;
 }
 
 /* Phần items */
@@ -100,13 +88,13 @@
   width: 100%;
 }
 
-.section-items h1 {
+.title {
   letter-spacing: 5px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.section-items span {
+.title span {
   font-size: 40px;
   color: #ff2222;
 }
@@ -164,7 +152,7 @@
 
 .item-button {
   background-color: var(--color-red-dark);
-  padding: 10px 20px;
+  padding: 20px 40px;
   border: none;
   border-radius: 5px;
   color: var(--color-white);
@@ -174,20 +162,38 @@
 }
 
 .item-button:hover {
-  background-color: var(--color-background);
+  transform: scaleX(1.1);
   color: #000000;
 }
 
 /* làm sự kiện click hình */
 
 .click {
-  width: 120vh;
-  height: 100vh;
+  /* width: 120vh;
+  height: 100vh; */
   z-index: 999;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
+}
+
+.image {
+  margin: 50px;
+  padding: 0;
+  position: relative;
+  border-top: solid 1px #666;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 30px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 250px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -215,5 +221,31 @@
   .item p {
     color: #666;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 414px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 30px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 30px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
   }
 }

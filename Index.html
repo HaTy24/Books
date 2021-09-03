@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="./Navbar.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
-<body>
+<body class="body">
     <!-- Phần Navbar -->
     <div class="navbar">
         <div class="menu-container ">
             <a href="./Menu.html"  class="logo"><h1>HTT</h1></a>
             <div class="menu-search">
-                <input type="search" class="search">
+                <input type="search" class="input" placeholder="Search...">
                 <i class="fas fa-search"></i>
             </div>
             <ul id="menu" class="menu-items">
-                <li><a href="./Menu.html">Home</a></li>
+                <li><a href="./Index.html">Home</a></li>
                 <li><a href="#books">Books</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#image">Image</a></li>
@@ -38,6 +38,10 @@
         </div>
     </div>
 
+    <!-- phan demo -->
+
+
+
     <!-- Phần Section -->
     <div class="section">
         <div class="section-container">
@@ -46,23 +50,23 @@
                     <h1>Xuất bản đam mê của bạn theo cách của bạn</h1>
                     <p>Tạo Blog mới dễ dàng và miễn phí</p>
                     <input type="file" id="input-blog" hidden="hidden">
-                    <button type="button" id="btb-add-blog">Tạo Blog mới</button>
+                    <button class="item-button button-banner" type="button" id="btb-add-blog">Tạo Blog mới</button>
                 </div>
             </div>
         </div>
     </div>
         
-    <div class="section"  id="books">
+    <section class="section"  id="books">
         <div class="section-container">
 
             <div class="section-items">
-                <h1><span>B</span>ooks</h1>
+                <h1 class="title"><span>B</span>ooks</h1>
                 <ul class="items">
                     <li>
                         <img src="./Image/ngọc-trai-nhiều-màu.jpg" alt=""/>
                         <div class="item">
-                        <a href="#">Review: Người đua diều</a>
-                        <p>Mỗi lần nhắc đến tác phẩm Người đua diều của nhà văn Khaled Housseini, trong lòng tôi lại dâng lên nỗi ân hận, và cả sự hổ thẹn nữa.  Chả là, cách đây độ gần 15 năm, một cô sinh viên yêu quý của tôi đã dúi vào tay tôi cuốn sách The kite runner … More</p>
+                        <a href="#" >Review: Người đua diều</a>
+                        <p id="cc">Mỗi lần nhắc đến tác phẩm Người đua diều của nhà văn Khaled Housseini, trong lòng tôi lại dâng lên nỗi ân hận, và cả sự hổ thẹn nữa.  Chả là, cách đây độ gần 15 năm, một cô sinh viên yêu quý của tôi đã dúi vào tay tôi cuốn sách The kite runner … More</p>
                         <i class="fas fa-comments"></i>
                     </div>
                 </li>
@@ -95,14 +99,30 @@
             </ul>
         </div>
         </div>
-    </div>
+    </section>
     
     <section class="about" id="about">
         <div class="about-me">
-            <h1><span>A</span>bout me</h1>
+            <h1 class="title"><span>A</span>bout me</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ut nesciunt a impedit illum neque consequuntur quo in tenetur dolore dolor optio incidunt dolorem perspiciatis nulla ipsam reiciendis nisi odio!</p>
             <a href="#"><i class="fas fa-donate"></i> Donate</a>
             <a href="#"><i class="fab fa-facebook"></i> Facebook của Hà Thiện Tỷ</a>
+        </div>
+    </section>
+
+    <section class="image" id="image">
+        <h1 class="title"><span>I</span>mage</h1>
+        <div class="image-container">
+            <img src="./Image/ct.jpg" alt=""/>
+            <img src="./Image/ct.jpg" alt=""/>
+            <img src="./Image/maxresdefault.jpg" alt=""/>
+            <img src="./Image/maxresdefault.jpg" alt=""/>
+            <img src="./Image/noibanden-nhatuphuquoc9-1.jpg" alt=""/>
+            <img src="./Image/noibanden-nhatuphuquoc9-1.jpg" alt=""/>
+            <img src="./Image/ngọc-trai-nhiều-màu.jpg" alt=""/>
+            <img src="./Image/ngọc-trai-nhiều-màu.jpg" alt=""/>
+            <img src="./Image/nui-cam-ha-giang-2.jpg" alt=""/>
+            <img src="./Image/nui-cam-ha-giang-2.jpg" alt=""/>
         </div>
     </section>
 
@@ -114,7 +134,7 @@
                 <p>Follow Blog with Email</p>
                 <p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
                 <p>Join 1,000 other followers</p>
-                <input class="footer-input" type="email" placeholder="Enter your Email address..." >
+                <input class="input footer-input" type="email" placeholder="Enter your Email address..." >
                 <button type="submit" class="button" >Follow</button>
             </form>
             

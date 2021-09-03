@@ -3,19 +3,11 @@
 //     elem.style.color = newColor;
 // }
 
-// const h1Element = document.querySelector('.box');
-// console.log(h1Element)
-
-// h1Element.onclick = function(){
-//   alert('hehehe')
-// }
 // const h= document.querySelector('input[type="range"]').addEventListener('input', cha);
 // const d = document.querySelector('#demo')
 // function cha(e){
 //   d.innerHTML = e.target.value
 // }
-
-
 
 // const menu = document.querySelector('.menu-logo').addEventListener('click', change);
 // const show = document.querySelector('#htt');
@@ -24,6 +16,23 @@
 // function change(){
 //   show.classList.toggle('menu-items-c')
 // }
+
+
+const nam = document.querySelectorAll('#books a');
+
+
+document.querySelector('.fa-search').addEventListener('click', function(e){
+  const getValue = document.querySelector('.search').value;
+
+  nam.forEach(function(item){
+    
+  })
+  const array = Object.keys(item)
+  console.log(typeof array)
+    
+
+})
+
 
 
 const menu = document.querySelector('.menu-logo')
@@ -37,29 +46,29 @@ menu.addEventListener('click' , function(){
 
 // Picture
 
-const picture = document.querySelectorAll('.items img');
+const picture = document.querySelectorAll('body img');
+picture.forEach((item)=>item.addEventListener('click', zoomPicture)) 
 
-// for(let i=0; i<=picture.length;i++){
-//   picture.addEventListener('click' ,changePicture);
-//   function changePicture(e){
-//     console.log(e.target.getAttribute('src'))
-//   }
-// }
-
-picture.forEach((item)=>item.addEventListener('click', changePicture)) 
-
-
-function changePicture(e){
+function zoomPicture(e){
   // console.log(e.target)
   // // template.innerHTML
   const image = e.target.getAttribute('src');
   console.log(image)
 
   const template=`
-  <img class="new-img" src=${image} alt=""/>
+  <div class="info">
+  <img src=${image} alt=""/>
+  </div>
 `
 document.body.insertAdjacentHTML('beforeend',template)
 }
+
+document.body.addEventListener('click',function(e){
+  if(e.target.matches('.info')){
+    console.log(e.target)
+    e.target.parentNode.removeChild(e.target)
+  }
+})
 
 
 const navbar= document.querySelector('.navbar')
@@ -91,7 +100,7 @@ window.addEventListener('scroll',()=>{
   const contai = `<div class="picture">
   <div class="picture-demo">
       <i class="far fa-times-circle"></i>
-      <img src="./Image/ct.jpg" alt=""/>
+      <img src="./Image/1618557736_blog-la-gi.png" alt=""/>
    </div>
   </div>`
   function hi (){
@@ -107,7 +116,6 @@ window.addEventListener('scroll',()=>{
      hinh.parentNode.removeChild(hinh)
      
    }
-   console.log(e.target)
  }
 
   
